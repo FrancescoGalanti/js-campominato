@@ -8,14 +8,21 @@
 var difficolta = prompt("quale difficolta scegli: \n0 \n1 \n2");
 
 switch(difficolta) {
-  case "0";
+  case "0":
+      num = parseInt(prompt("Scegli un numero compreso tra 1 e 100 e non duplicarli");
+      number = random(1, 100);
       tries = 84;
       break;
-  case "1"
+  case "1":
+      num = parseInt(prompt("Scegli un numero compreso tra 1 e 80 e non duplicarli");
+      number = random(1,80)
       tries = 64;
       break
-  case "2"
-       tries = 34;    
+  case "2":
+       num = parseInt(prompt("Scegli un numero compreso tra 1 e 50 e non duplicarli");
+       number = random(1,50)
+       tries = 34;
+       break;
 
 }
 
