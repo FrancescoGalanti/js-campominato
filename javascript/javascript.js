@@ -3,25 +3,25 @@
 **/
 
 
-// difficolta //
+difficolta //
 
 var difficolta = prompt("quale difficolta scegli: \n0 \n1 \n2");
 
 switch(difficolta) {
   case "0":
-      num = parseInt(prompt("Scegli un numero compreso tra 1 e 100 e non duplicarli");
-      number = random(1, 100);
-      tries = 84;
+      var num = parseInt(prompt("Scegli un numero compreso tra 1 e 100 e non duplicarli"));
+      var number = random(1, 100);
+      var tries = 84;
       break;
   case "1":
-      num = parseInt(prompt("Scegli un numero compreso tra 1 e 80 e non duplicarli");
-      number = random(1,80)
-      tries = 64;
-      break
+       var num = parseInt(prompt("Scegli un numero compreso tra 1 e 80 e non duplicarli"));
+       var number = random(1,80)
+       var tries = 64;
+      break;
   case "2":
-       num = parseInt(prompt("Scegli un numero compreso tra 1 e 50 e non duplicarli");
-       number = random(1,50)
-       tries = 34;
+       var num = parseInt(prompt("Scegli un numero compreso tra 1 e 50 e non duplicarli"));
+       var number = random(1,50)
+       var tries = 34;
        break;
 
 }
@@ -64,6 +64,16 @@ switch(difficolta) {
  }
 
 
+
+function addinclude(){
+  while(scelta.length < tries){
+       var num = parseInt(prompt("Scegli un numero compreso tra 1 e 100 e non duplicarli"));
+
+       if( ! scelta.includes(num)){
+         scelta.push(num);
+       }
+  }
+}
 
 
 
