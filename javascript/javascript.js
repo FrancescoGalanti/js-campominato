@@ -8,8 +8,15 @@
 var difficolta = prompt("quale difficolta scegli: \n0 \n1 \n2");
 
 switch(difficolta) {
-      case "0";
-      
+  case "0";
+      tries = 84;
+      break;
+  case "1"
+      tries = 64;
+      break
+  case "2"
+       tries = 34;    
+
 }
 
 
