@@ -1,1 +1,1 @@
-js-campominato
+js-pwdgen-wannabe
