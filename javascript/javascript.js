@@ -3,6 +3,16 @@
 **/
 
 
+// difficolta //
+
+var difficolta = prompt("quale difficolta scegli: \n0 \n1 \n2");
+
+switch(difficolta) {
+      case "0";
+      
+}
+
+
 
  // variabili //
  var bombe = [];
