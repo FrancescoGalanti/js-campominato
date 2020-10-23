@@ -32,6 +32,15 @@
 
  console.log(scelta)
 
+ if(bombe.includes(num) === true){
+   alert("hai perso");
+
+ } else{
+    alert("hai vinto");
+ }
+
+
+
 
 
  function random(min,max) {
