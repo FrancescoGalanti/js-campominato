@@ -16,7 +16,7 @@ console.log(difficolta)
 
 switch (difficolta) {
   case 0:
-    var tries = 5;
+    var tries = 84;
     var max = 100;
     var contatore = 1;
     break;
