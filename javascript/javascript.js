@@ -16,19 +16,19 @@ console.log(difficolta)
 
 switch (difficolta) {
   case 0:
-    var tries = 84;
+    var tries = 5;
     var max = 100;
-    var contatore = 1;
+    var contatore = 0;
     break;
     case 1:
     var max = 80;
     var tries = 64;
-    var contatore = 1;
+    var contatore = 0;
     break;
     case 2:
     var max = 50;
     var tries = 34;
-    var contatore = 1;
+    var contatore = 0;
     break;
   default:
 
@@ -58,26 +58,33 @@ switch (difficolta) {
  while( scelta.length < tries){
       var num = parseInt(prompt("Scegli un numero compreso tra 1 "+max+" duplicarli") );
 
+      while(isNaN(num)){
+        var num = parseInt(prompt(" numero non valido, Scegli un numero compreso tra 1 "+max+" duplicarli") );
+      }
+
       if( ! scelta.includes(num)){
         scelta.push(num);
+        contatore = contatore + 1;
+        if(bombe.includes(num) === true){
+          alert("hai perso");
+          break;
+          }if(tries == contatore){
+            alert("hai vinto il gioco")
+            break;
+        } else{
+          alert("continua a scegliere il numero ");
+        }
       } else{
         var num = parseInt(prompt("Per favore non ripetere i numeri") );
       }
 
-      if(bombe.includes(num) === true){
-        alert("hai perso");
-        break;
-      } else{
-        alert("continua a scegliere il numero");
-      }
 
-      if(tries == contatore){
-        alert("hai vinto il gioco")
-      }
+
+
       console.log(num);
       console.log(tries);
       console.log(contatore)
-      ++contatore;
+
  }
 
  console.log(scelta);
